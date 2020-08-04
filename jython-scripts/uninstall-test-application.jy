@@ -1,0 +1,3 @@
+AdminApp.uninstall("DefaultApplication.ear")
+AdminConfig.save()
+print("Done")
