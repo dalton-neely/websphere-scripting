@@ -15,5 +15,5 @@ The following table outlines common useful properties in WebSphere.
 |:--------:|:-----:|
 |WAS Home  | C:\Program Files\IBM\WebSphere\AppServer |
 
-[1]:http://http://localhost:9060/ibm/console/
-[2]:http://http://localhost:9080/snoop
+[1]:http://localhost:9060/ibm/console/
+[2]:http://localhost:9080/snoop
