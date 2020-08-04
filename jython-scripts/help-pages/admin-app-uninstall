@@ -1,0 +1,13 @@
+Method: uninstall
+
+        Arguments: application name, options
+
+        Description: Uninstalls application named by "application name" using
+        the options supplied by "options".
+
+        Method: uninstall
+
+        Arguments: application name
+
+        Description: Uninstalls the application specified by
+        "application name" using default options.

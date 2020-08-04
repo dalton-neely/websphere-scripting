@@ -1,0 +1,34 @@
+The Help object has two purposes:
+
+        First, provide general help information for the objects
+        supplied by wsadmin for scripting: Help, AdminApp, AdminConfig,
+        AdminControl and AdminTask.
+
+        Second, provide a means to obtain interface information about
+        MBeans running in the system.  For this purpose, a variety of
+        commands are available to get information about the operations,
+        attributes, and other interface information about particular
+        MBeans.
+
+        The following commands are supported by Help; more detailed
+        information about each of these commands is available by using the
+        "help" command of Help and supplying the name of the command
+        as an argument.
+
+
+attributes              Given an MBean, returns help for attributes
+operations              Given an MBean, returns help for operations
+constructors            Given an MBean, returns help for constructors
+description             Given an MBean, returns help for description
+notifications           Given an MBean, returns help for notifications
+classname               Given an MBean, returns help for classname
+all                     Given an MBean, returns help for all the above
+help                    Returns this help text
+AdminControl            Returns general help text for the AdminControl object
+AdminConfig             Returns general help text for the AdminConfig object
+AdminApp                Returns general help text for the AdminApp object
+AdminTask               Returns general help text for the AdminTask object
+wsadmin                 Returns general help text for the wsadmin script
+                        launcher
+message                 Given a message id, returns explanation and user
+                        action message

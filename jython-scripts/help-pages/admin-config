@@ -1,0 +1,83 @@
+The AdminConfig object communicates with the Config Service in a
+        WebSphere server to manipulate configuration data for a WebSphere
+        installation.  AdminConfig has commands to list, create, remove,
+        display, and modify configuration data, as well as commands to display
+        information about configuration data types.
+
+        Most of the commands supported by AdminConfig operate in two modes:
+        the default mode is one in which AdminConfig communicates with the
+        WebSphere server to accomplish its tasks.  A local mode is also
+        possible, in which no server communication takes place.  The local
+        mode of operation is invoked by bringing up the scripting client with
+        no server connected using the command line "-conntype NONE" option
+        or setting the "com.ibm.ws.scripting.connectionType=NONE" property in
+        the wsadmin.properties.
+
+        The following commands are supported by AdminConfig; more detailed
+        information about each of these commands is available by using the
+        "help" command of AdminConfig and supplying the name of the command
+        as an argument.
+
+attributes      Shows the attributes for a given type
+checkin         Checks a file into the configuration repository
+convertToCluster
+                Converts a server to be the first member of a new ServerCluster
+create          Creates a configuration object, given a type, a parent, and
+                a list of attributes, and optionally an attribute name for the
+                new object
+createClusterMember
+                Creates a new server that is a member of an existing cluster
+createDocument  Creates a new document in the configuration repository
+createUsingTemplate
+                Creates an object using a particular template type
+defaults        Displays the default values for attributes of a given type
+deleteDocument  Deletes a document from the configuration repository
+existsDocument  Tests for the existence of a document in the configuration
+                repository
+extract         Extracts a file from the configuration repository
+getCrossDocumentValidationEnabled
+                Returns true if cross-document validation is enabled
+getid           Shows the configuration ID of an object, given a string version
+                of its containment
+getObjectName   Given a configuration ID, returns a string version of the
+                ObjectName for the corresponding running MBean, if any
+getObjectType   Given a configuration ID, returns a string version of the
+                object type
+getSaveMode     Returns the mode used when "save" is invoked
+getValidationLevel
+                Returns the validation used when files are extracted from the
+                repository.
+getValidationSeverityResult
+                Returns the number of messages of a given severity from the
+                most recent validation
+hasChanges      Returns true if unsaved configuration changes exist
+help            Shows help information
+installResourceAdapter
+                Installs a J2C resource adapter with the given rar file name
+                and an option string in the node
+list            Lists all configuration objects of a given type
+listTemplates   Lists all available configuration templates of a given type
+modify          Changes specified attributes of a given configuration object
+parents         Shows the objects which contain a given type
+queryChanges    Returns a list of unsaved files
+remove          Removes the specified configuration object
+required        Displays the required attributes of a given type.
+reset           Discards unsaved configuration changes
+resetAttributes Resets value of the specified attributes.
+save            Commits unsaved changes to the configuration repository
+setCrossDocumentValidationEnabled
+                Sets the cross-document validation enabled mode.
+setSaveMode     Changes the mode used when "save" is invoked
+setValidationLevel
+                Sets the validation used when files are extracted from the
+                repository.
+show            Shows the attributes of a given configuration object
+showall         Recursively shows the attributes of a given configuration
+                object, and all the objects contained within each attribute.
+showAttribute   Displays only the value for the single attribute specified.
+types           Shows the possible types for configuration
+uninstallResourceAdapter
+                Uninstalls a J2C resource adapter with the given resource
+                adapter configuration ID.
+unsetAttributes Unsets value of the specified attributes.
+validate        Invokes validation

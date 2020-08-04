@@ -1,0 +1,82 @@
+The AdminControl object enables the manipulation of MBeans running
+        in a WebSphere server process.  The number and type of MBeans available
+        to the scripting client depends on the server to which the client is
+        connected.  If the client is connected to a Deployment Manager, then
+        all the MBeans running in the Deployment Manager are visible as are all
+        the MBeans running in the Node Agents connected to this Deployment
+        Manager, and all the MBeans running in the application servers on those
+        nodes.
+
+        The following commands are supported by AdminControl; more detailed
+        information about each of these commands is available by using the
+        "help" command of AdminControl and supplying the name of the command
+        as an argument.
+
+        Note that many of these commands support two different sets of
+        signatures: one that accepts and returns strings, and one low-level
+        set that works with JMX objects like ObjectName and AttributeList.
+        In most situations, the string signatures are likely to be more useful,
+        but JMX-object signature versions are supplied as well.  Each of these
+        JMX-object signature commands has "_jmx" appended to the command name.
+        Hence there is an "invoke" command, as well as a "invoke_jmx" command.
+
+completeObjectName
+                Returns a String version of an object name given a template
+                name
+getAttribute_jmx
+                Given ObjectName and name of attribute, returns value of
+                attribute
+getAttribute    Given String version of ObjectName and name of attribute,
+                returns value of attribute
+getAttributes_jmx
+                Given ObjectName and array of attribute names, returns
+                AttributeList.
+getAttributes   Given String version of ObjectName and attribute names,
+                returns String of name value pairs. Given String version
+                of ObjectName, returns String of all name value pairs.
+getCell         Returns the cell name of the connected server
+getConfigId     Given String version of ObjectName, return a configuration
+                ID for the corresponding configuration object, if any
+getDefaultDomain
+                Returns "WebSphere"
+getDomainName   Returns "WebSphere"
+getHost         Returns String representation of connected host
+getMBeanCount   Returns number of registered beans
+getMBeanInfo_jmx
+                Given ObjectName, returns MBeanInfo structure for MBean
+getNode         Returns the node name of the connected server
+getObjectInstance
+                Given String version of ObjectName, returns ObjectInstance
+                object that match.
+getPort         Returns String representation of port in use
+getType         Returns String representation of connection type in use
+help            Shows help information
+invoke_jmx      Given ObjectName, name of method, array of parameters and
+                signature, invokes method on MBean specified
+invoke          Invokes a method on the specified MBean
+isRegistered_jmx
+                Returns true if supplied ObjectName is registered
+isRegistered    Returns true if supplied String version of ObjectName is
+                registered
+makeObjectName  Returns an ObjectName built with the given string
+queryNames_jmx  Given ObjectName and QueryExp, retrieves set of ObjectNames
+                that match.
+queryNames      Given String version of ObjectName, retrieves String of
+                ObjectNames that match
+queryMBeans     Given String version of ObjectName, returns a set of
+                ObjectInstances object that match
+reconnect       Reconnects with server
+setAttribute_jmx
+                Given ObjectName and Attribute object, sets attribute for MBean
+                specified
+setAttribute    Given String version of ObjectName, attribute name and
+                attribute value, sets attribute for MBean specified
+setAttributes_jmx
+                Given ObjectName and AttributeList object, sets attributes for
+                the MBean specified
+setAttributes   Given String version of ObjectName, attribute name
+                and value pairs, sets attributes for the MBean specified
+startServer     Given the name of a server, starts that server
+stopServer      Given the name of a server, stops that server
+testConnection  Tests the connection to a DataSource object
+trace           Sets the wsadmin trace specification

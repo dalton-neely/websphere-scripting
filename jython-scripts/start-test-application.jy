@@ -1,0 +1,7 @@
+print("Starting DefaultApplication.ear")
+cellName = AdminControl.getCell()
+nodeName = AdminControl.getNode()
+serverName = AdminControl.getAttribute(AdminControl.queryNames("node=" + nodeName + ",type=Server,*"), "name")
+appManager = AdminControl.queryNames('cell=' + cellName + ',node=' + nodeName + ',type=ApplicationManager,process=' + serverName + ',*')
+AdminControl.invoke(appManager, 'startApplication', 'DefaultApplication.ear')
+print("Done")

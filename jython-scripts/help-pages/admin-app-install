@@ -1,0 +1,12 @@
+Method: install
+
+        Arguments: filename, options
+
+        Description: Installs the application in the file specified by
+        "filename" using the options specified by "options". All required
+        information must be supplied in the options string; no prompting is
+        performed.
+
+        The AdminApp "options" command may be used to get a list of all
+        possible options for a given ear file.  The AdminApp "help" command
+        may be used to get more information about each particular option.

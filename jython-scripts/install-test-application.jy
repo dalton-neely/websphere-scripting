@@ -1,0 +1,5 @@
+print "Installing DefaultApplication.ear"
+AdminApp.install('C:\Program Files\IBM\WebSphere\AppServer\installableApps\DefaultApplication.ear')
+print "Saving"
+AdminConfig.save()
+print "Done"

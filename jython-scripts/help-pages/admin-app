@@ -1,0 +1,51 @@
+The AdminApp object allows application objects to be manipulated
+        -- this includes installing, uninstalling, editing, and listing. Most
+        of the commands supported by AdminApp operate in two modes: the default
+        mode is one in which AdminApp communicates with the WebSphere server to
+        accomplish its tasks.  A local mode is also possible, in which no
+        server communication takes place.  The local mode operation is invoked
+        by bringing up the scripting client with no server connected using the
+        command line "-conntype NONE" option tor setting the
+        "com.ibm.ws.scripting.connectionType=NONE" property in the
+        wsadmin.properties.
+
+        The following commands are supported by AdminApp; more detailed
+        information about each of these commands is available by using the
+        "help" command of AdminApp and supplying the name of the command
+        as an argument.
+
+deleteUserAndGroupEntries
+                Deletes all the user/group information for all the roles and
+                all the user name/password information for RunAs roles for a
+                given application
+edit            Edits the properties of an application
+editInteractive Edits the properties of an application interactively
+export          Exports application to a file
+exportDDL       Exports DDL from application to a directory
+exportFile      Exports content of a single file from an application to a file
+getDeployStatus Returns the combined Deployment status of the application
+help            Shows help information
+install         Installs an application, given a file name and an option string
+installInteractive
+                Installs an application in interactive mode, given a file name
+                and an option string
+isAppReady      Checks whether the application is ready to be run
+list            Lists all installed applications
+listModules     Lists the modules in a specified application
+options         Shows the options available, for a given file, application,
+                or in general
+renameApplication       Rename a given application
+publishWSDL     Publishs WSDL files for a given application
+searchJNDIReferences
+                Lists application that refers to the given JNDIName on a given
+                node
+taskInfo        Shows detailed information pertaining to a given install task
+                for a given file
+uninstall       Uninstalls an application, given an application name and
+                an option string
+update          Updates an installed application
+updateAccessIDs Updates the user/group binding information with accessID
+                from user registry for a given application
+updateInteractive       Updates an installed application interactively
+view            Views an application or module, given an application or
+                module name

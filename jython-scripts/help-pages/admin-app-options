@@ -1,0 +1,36 @@
+Method: options
+
+        Arguments: none
+
+        Description: Displays the general options available for every
+        application to be installed.
+
+        Method: options
+
+        Arguments: filename
+
+        Description: Displays all the options available for installing the
+        application in the file specified by "filename".
+
+        Method: options
+
+        Arguments: appname
+
+        Description: Displays all the options available for editing the
+        application specified by "appname".
+
+        Method: options
+
+        Arguments: modulename
+
+        Description: Displays all the options available for editing the
+        application module specified by "modulename".
+
+        Method: options
+
+        Arguments: filename, operation
+
+        Description: Displays all the options available for the
+        file specified by "filename" using the specified operation.
+        Valid operations are "installapp", "updateapp", "addmodule",
+        and "updatemodule".

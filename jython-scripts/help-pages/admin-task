@@ -1,0 +1,57 @@
+The AdminTask object enables the execution of available admin
+        commands.  AdminTask commands operate in two modes:
+        the default mode is one which AdminTask communicates with the WebSphere
+        server to accomplish its task. A local mode is also available, in which
+        no server communication takes place. The local mode of operation is
+        invoked by bringing up the scripting client using the command line
+        "-conntype NONE" option or setting the
+        "com.ibm.ws.scripting.connectiontype=NONE" property in
+        wsadmin.properties file.
+
+The number of admin commands varies and depends on your WebSphere
+install. Use the following help commands to obtain a list of supported
+commands and their parameters:
+
+help -commands                  Lists all the admin commands
+help -commands <pattern>        Lists admin commands matching with wildcard
+                                "pattern"
+help -commandGroups             Lists all the admin command groups
+help -commandGroups <pattern>   Lists admin command groups matching with
+                                wildcard "pattern"
+help commandName                Displays detailed information for the
+                                specified command
+help commandName stepName       Displays detailed information for the specified
+                                step belonging to the specified command
+help commandGroupName           Displays detailed information for the specified
+                                command group
+
+There are various flavors to invoke an admin command. They are
+
+commandName                     Invokes an admin command that does not require
+                                any argument.
+
+commandName targetObject        Invokes an admin command with the specified
+                                target object string, for example, the
+                                configuration object name of a resource
+                                adapter. The expected target object varies
+                                with the admin command invoked. Use help
+                                command to get information on the target
+                                object of an admin command.
+
+commandName options             Invokes an admin command with the specified
+                                option strings. This invocation syntax is
+                                used to invoke an admin command that does
+                                not require a target object. It is also
+                                used to enter interactive mode if
+                                "-interactive" mode is included in the
+                                options string.
+
+commandName targetObject options        Invokes an admin command with the
+                                        specified target object and options
+                                        strings.  If "-interactive" is included
+                                        in the options string, then interactive
+                                        mode is entered.  The target object and
+                                        options strings vary depending on the
+                                        admin command invoked. Use help command
+                                        to get information on the target object
+                                        and options.

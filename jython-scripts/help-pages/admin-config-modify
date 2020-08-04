@@ -1,0 +1,6 @@
+Method: modify
+
+        Arguments: config id, attributes
+
+        Description: Changes the attributes specified by "attributes"  for
+        the configuration object named by "config id."

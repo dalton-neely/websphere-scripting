@@ -1,0 +1,13 @@
+Method: types
+
+        Arguments: none
+
+        Description: Displays all the possible top-level configuration
+        object types.
+
+        Method: types
+
+        Arguments: pattern
+
+        Description: Displays all the possible top-level configuration
+        object types matching with the wildcard "pattern".

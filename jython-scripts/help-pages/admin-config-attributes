@@ -1,0 +1,12 @@
+Method: attributes
+
+        Arguments: type
+
+        Description: Displays all the possible attributes contained by an
+        object of type "type."  The attribute types are also displayed; when
+        the attribute represents a reference to another object, the type of
+        the tattribute has a suffix of "@."  When the attribute represents a
+        collection of objects, the type is listed with a suffix of "*."  If the
+        type represents a base type, possible subtypes are listed after the
+        base type in parenthesis.  If the type is an enumeration, it is listed
+        as "ENUM," followed by the possible values in parentheses.
